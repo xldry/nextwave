@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { rem } from 'polished'
 
 export const Header = styled.header`
   border-width: 0 0 1px 0;
@@ -29,19 +30,20 @@ export const HeaderContent = styled.div`
 export const Menu = styled.nav`
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
   & > a {
     margin-right: 1em;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: ${rem(20)};
     font-family: 'Bodoni Moda', serif;
   }
 
-  .active {
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
-  }
 `
 
 export const Button = styled.button`
@@ -53,4 +55,41 @@ export const Button = styled.button`
     cursor: pointer;
     color: #888;
   }
+`
+
+export const MobileMenuContainer = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  .drawer-menu.open {
+    right: 0;
+  }
+`
+
+export const MobileMenu = styled.nav`
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -100%;
+  width: 100%;
+  height: calc(100vh);
+  background-color: #fff;
+  transition: right 0.3s ease-in-out;
+  z-index: 100;
+  & > a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Bodoni Moda', serif;
+    text-align: right;
+    margin-right: ${rem(20)};
+    margin-top: ${rem(20)};
+  }
+`
+
+export const MobileMenuButton = styled.button`
+  background: transparent;
+  border: 0;
 `

@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 import styles from './styles.module.css'
 
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'NextWave';
 
 export default function Layout({ children }) {
   return (

@@ -47,6 +47,12 @@ export const FooterContainer = styled.div`
           text-decoration: none;
           padding-bottom: ${rem(3)};
           border-bottom: 1px solid white;
+
+          &:hover {
+            background: #FFD900;
+            color: black;
+            border-bottom: 0;
+          }
         }
       }
     }
