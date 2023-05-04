@@ -4,7 +4,7 @@ import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import * as S from './styles'
+import * as S from '../styles/styles.js'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
