@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Date from '../../components/date';
 import Image from 'next/image';
 
-import * as S from './styles'
+import * as S from '../../styles/posts/styles'
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
