@@ -40,9 +40,12 @@ export const TitleContainer = styled.div`
 
 export const PostInfo = styled.div`
   display: flex;
-  flex-direction: column;
-  padding-top: 15px;
-  justify-content: center;
+  flex-direction: row;
+  margin: ${rem(25)} auto ${rem(0)} auto;
+  padding-top: ${rem(25)};
+  border-top: 2px solid black;
+  max-width: 640px;
+  position: relative;
 
   .separator {
     width: 320px;
@@ -57,41 +60,64 @@ export const PostInfo = styled.div`
 `
 
 export const AuthorAvatar = styled.div`
-  background: black;
-  border-radius: 50%;
-  width: 56px;
-  height: 56px;
+  img {
+    border-radius: 50%;
+  }
 `
 
 export const PostDate = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-left: ${rem(10)};
 
   p {
     margin: 0;
-    margin-bottom: 3px;
-    font-weight: 300;
-    font-size: ${rem(14)};
+    font-weight: 500;
+    font-size: ${rem(16)};
   }
 
-  span {
+  time {
     margin: 0;
-    font-weight: 300;
+    font-weight: 400;
     font-size: ${rem(14)};
   }
 `
 
 export const SocialShare = styled.div`
+  box-shadow: 0px 1px 4px #eaeaea;
+  height: ${rem(44)};
+  border-radius: 4px;
+  position: absolute;
+  right: 0;
 
+  button {
+    width: ${rem(70)};
+    height: ${rem(44)};
+    background: white;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+
+    &:first-child {
+      border-radius: 4px 0 0 4px;
+    }
+
+    &:last-child {
+      border-left: 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    svg {
+      width: ${rem(22)};
+    }
+  }
 `;
 
 export const PostContent = styled.article`
-  margin-top: 50px;
+  margin: 50px auto 0 auto;
   font-family: 'Noto Serif', serif;
   font-weight: 400;
   font-size: ${rem(16)};
+  max-width: 640px;
 
   div {
     p {
