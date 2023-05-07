@@ -94,15 +94,20 @@ export const SocialShare = styled.div`
     width: ${rem(70)};
     height: ${rem(44)};
     background: white;
-    border: 1px solid #eaeaea;
-    cursor: pointer;
+    border: 1px solid #eaeaea !important;
+    cursor: pointer !important;
+    font: initial !important;
 
-    &:first-child {
+    &:hover {
+      background: #eaeaea;
+    }
+
+    &:nth-child(1) {
       border-radius: 4px 0 0 4px;
     }
 
-    &:last-child {
-      border-left: 0;
+    &:nth-child(2) {
+      border-left: 0 !important;
       border-radius: 0 4px 4px 0;
     }
 

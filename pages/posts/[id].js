@@ -1,11 +1,13 @@
-import Layout from '../../components/layout';
 import Head from 'next/head';
-import Date from '../../components/date';
 import Image from 'next/image';
-import Twitter from 'twitter-lite';
+import Date from '../../components/date';
+import Layout from '../../components/layout';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { TwitterShareButton, FacebookShareButton } from 'react-share';
 
 import * as S from '../../styles/posts/styles'
 
@@ -27,30 +29,14 @@ export async function getStaticPaths() {
   };
 }
 
-const client = new Twitter({
-  consumer_key: process.env.TWITTER_CONSUMER_KEY,
-  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
-  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
-  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
-});
-
-async function shareOnTwitter() {
-  const text = 'Check out my new blog post!';
-  const url = 'https://example.com/blog/my-post';
-
-  try {
-    const tweet = await client.post('statuses/update', {
-      status: `${text} ${url}`,
-    });
-
-    console.log('Tweet posted:', tweet.text);
-  } catch (err) {
-    console.error('Error posting tweet:', err);
-  }
-}
-
-
 export default function Post({ postData }) {
+  const router = useRouter();
+  const [currentUrl, setCurrentUrl] = useState('');
+
+  useEffect(() => {
+    setCurrentUrl(window.location.href);
+  }, [router.asPath]);
+
   return (
     <Layout>
       <Head>
@@ -78,12 +64,18 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </S.PostDate>
         <S.SocialShare>
-          <button onClick={shareOnTwitter}>
+          <TwitterShareButton
+            url={currentUrl}
+            title={postData.title}
+          >
             <FontAwesomeIcon icon={faTwitter} />
-          </button>
-          <button>
+          </TwitterShareButton>
+          <FacebookShareButton
+            url={currentUrl}
+            title={postData.title}
+          >
             <FontAwesomeIcon icon={faFacebook} />
-          </button>
+          </FacebookShareButton>
         </S.SocialShare>
       </S.PostInfo>
       <S.PostContent>
