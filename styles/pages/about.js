@@ -10,11 +10,11 @@ export const AboutDescription = styled.div`
   border: 1px solid #1e1e1e;
 
   p {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: ${rem(16)};
     color: black;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   a {

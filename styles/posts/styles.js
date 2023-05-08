@@ -18,10 +18,10 @@ export const TitleContainer = styled.div`
     color: black;
     text-align: center;
     line-height: 100%;
-    margin-bottom: 15px;
+    margin-bottom: ${rem(15)};
     @media (max-width: 768px) {
       font-size: ${rem(36)};
-      padding: 0 10px;
+      padding: ${rem(0)} ${rem(10)};
     }
   }
 
@@ -30,10 +30,10 @@ export const TitleContainer = styled.div`
     font-family: monospace;
     font-weight: 400;
     color: #555;
-    margin-bottom: 30px;
+    margin-bottom: ${rem(30)};
     text-align: center;
     @media (max-width: 768px) {
-      padding: 0 20px;
+      padding: ${rem(0)} ${rem(20)};
     }
   }
 `
@@ -41,17 +41,22 @@ export const TitleContainer = styled.div`
 export const PostInfo = styled.div`
   display: flex;
   flex-direction: row;
-  margin: ${rem(25)} auto ${rem(0)} auto;
+  margin: ${rem(15)} auto ${rem(0)} auto;
   padding-top: ${rem(25)};
   border-top: 2px solid black;
   max-width: 640px;
   position: relative;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    padding: ${rem(20)};
+    border: 0;
+  }
 
   .separator {
     width: 320px;
     height: 2px;
     background: rgb(255, 53, 48);
-    margin: 20px auto 0 auto
+    margin: ${rem(20)} auto ${rem(0)} auto;
   }
 
   & > p {
@@ -69,6 +74,7 @@ export const PostDate = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: ${rem(10)};
+  margin-bottom: ${rem(20)};
 
   p {
     margin: 0;
@@ -89,9 +95,16 @@ export const SocialShare = styled.div`
   border-radius: 4px;
   position: absolute;
   right: 0;
+  @media (max-width: 768px) {
+    position: relative;
+    width: 100%;
+  }
 
   button {
     width: ${rem(70)};
+    @media (max-width: 768px) {
+      width: 50%;
+    }
     height: ${rem(44)};
     background: white;
     border: 1px solid #eaeaea !important;
@@ -118,7 +131,10 @@ export const SocialShare = styled.div`
 `;
 
 export const PostContent = styled.article`
-  margin: 50px auto 0 auto;
+  margin: ${rem(50)} auto ${rem(0)} auto;
+  @media (max-width: 768px) {
+    margin: ${rem(10)} auto ${rem(0)} auto;
+  }
   font-family: 'Noto Serif', serif;
   font-weight: 400;
   font-size: ${rem(16)};
@@ -127,10 +143,10 @@ export const PostContent = styled.article`
   div {
     p {
       line-height: 28px;
-      margin-bottom: 20px;
+      margin-bottom: ${rem(20)};
       color: #1a1a1a;
       @media (max-width: 768px) {
-        padding: 0 20px;
+        padding: ${rem(0)} ${rem(20)};
       }
 
       img {
@@ -176,11 +192,12 @@ export const ReadNext = styled.div`
 `
 
 export const ReadNextPosts = styled.div`
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  grid-column-gap: ${rem(20)};
 
   .post-link {
     text-decoration: none;
@@ -190,13 +207,28 @@ export const ReadNextPosts = styled.div`
     }
   }
 
+  div {
+    width: 100%;
+    text-align: center;
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    img {
+      margin-bottom: ${rem(15)};
+    }
+  }
+
   .post-title {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: ${rem(18)};
     text-align: center;
     color: black;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   h2 {
@@ -205,17 +237,7 @@ export const ReadNextPosts = styled.div`
     color: black;
     text-align: center;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: ${rem(30)};
     font-weight: 300;
-  }
-
-  div {
-    width: 30%;
-    text-align: center;
-
-    img {
-      margin-bottom: 15px;
-      height: auto;
-    }
   }
 `

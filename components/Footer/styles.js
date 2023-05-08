@@ -49,6 +49,8 @@ export const FooterContainer = styled.div`
           text-decoration: none;
           padding-bottom: ${rem(3)};
           border-bottom: 1px solid white;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
 
           &:hover {
             background: #FFD900;
@@ -61,6 +63,7 @@ export const FooterContainer = styled.div`
     small {
       text-align: center;
       margin-top: ${rem(15)};
+      font-family: 'Roboto', sans-serif;
     }
   }
 `

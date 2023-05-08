@@ -2,7 +2,7 @@
 title: 'O arremesso de um desodorante ao som dos tambores'
 date: '2023-04-26'
 excerpt: '(Ou como a compra impulsiva de um ingresso de show me fez descobrir uma das minhas bandas favoritas)'
-banner: 'https://aldryv.files.wordpress.com/2023/04/9250bd20afdb142ff3834b528b71a32f.png'
+banner: 'https://aldryv.files.wordpress.com/2023/05/ttng-1.jpg'
 author: 'Aldry Vinícius'
 ---
 

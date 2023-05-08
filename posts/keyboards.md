@@ -2,7 +2,7 @@
 title: 'O valor de investimento que faz compensar suas dores no pulso'
 date: '2023-05-03'
 excerpt: '(Ou como a internet me fez aderir a mais um hobby caro)'
-banner: 'https://aldryv.files.wordpress.com/2023/05/pedro-costa-axy5doqnztc-unsplash.jpg'
+banner: 'https://aldryv.files.wordpress.com/2023/05/mechkb-1.jpg'
 author: 'Aldry Vinícius'
 ---
 
