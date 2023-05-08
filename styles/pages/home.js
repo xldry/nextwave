@@ -74,12 +74,16 @@ export const AllPosts = styled.div`
   }
 
   .post-title {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: ${rem(18)};
     text-align: center;
     color: black;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
+    @media (max-width: 768px) {
+      font-size: ${rem(16)};
+      line-height: ${rem(20)};
+    }
   }
 
   h2 {
