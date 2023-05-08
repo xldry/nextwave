@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <S.LatestPost>
         {allPostsData.slice(0,1).map(({ id, title, excerpt, banner }) => (
-          <div>
+          <div key={id}>
             <Link href={`/posts/${id}`}>
               <Image
                 src={banner}
@@ -42,7 +42,7 @@ export default function Home({ allPostsData }) {
       <S.AllPosts>
         <h2>Todos os posts</h2>
         {allPostsData.slice(1).map(({ id, title, banner }) => (
-          <div>
+          <div key={id}>
             <Link className="post-link" href={`/posts/${id}`}>
               <Image
                 src={banner}

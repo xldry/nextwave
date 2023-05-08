@@ -40,7 +40,9 @@ export const FooterContainer = styled.div`
       padding: 0;
 
       li {
-        margin: 0 10px;
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
 
         a {
           color: white;

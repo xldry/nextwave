@@ -151,3 +151,71 @@ export const PostContent = styled.article`
     }
   }
 `
+
+export const ReadNext = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: ${rem(50)};
+
+  .separator {
+    height: 1px;
+    width: 100%;
+    background: black;
+  }
+
+  img {
+    margin-bottom: ${rem(-15)};
+    z-index: 999;
+  }
+
+  h3 {
+    font-family: 'Bodoni Moda';
+    font-size: ${rem(40)};
+  }
+`
+
+export const ReadNextPosts = styled.div`
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .post-link {
+    text-decoration: none;
+
+    &:visited {
+      color: black;
+    }
+  }
+
+  .post-title {
+    font-family: sans-serif;
+    font-size: ${rem(18)};
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-family: 'Bodoni Moda';
+    font-size: ${rem(40)};
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    font-weight: 300;
+  }
+
+  div {
+    width: 30%;
+    text-align: center;
+
+    img {
+      margin-bottom: 15px;
+      height: auto;
+    }
+  }
+`
