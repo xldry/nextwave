@@ -41,7 +41,7 @@ export const TitleContainer = styled.div`
 export const PostInfo = styled.div`
   display: flex;
   flex-direction: row;
-  margin: ${rem(15)} auto ${rem(0)} auto;
+  margin: ${rem(25)} auto ${rem(0)} auto;
   padding-top: ${rem(25)};
   border-top: 2px solid black;
   max-width: 640px;
@@ -131,7 +131,7 @@ export const SocialShare = styled.div`
 `;
 
 export const PostContent = styled.article`
-  margin: ${rem(50)} auto ${rem(0)} auto;
+  margin: ${rem(25)} auto ${rem(0)} auto;
   @media (max-width: 768px) {
     margin: ${rem(10)} auto ${rem(0)} auto;
   }
