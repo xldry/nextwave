@@ -63,7 +63,13 @@ export const AllPosts = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: ${rem(0)} ${rem(50)};
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
 
   .post-link {
     text-decoration: none;
@@ -75,15 +81,12 @@ export const AllPosts = styled.div`
 
   .post-title {
     font-family: 'Roboto', sans-serif;
-    font-size: ${rem(18)};
+    font-size: ${rem(16)};
+    line-height: ${rem(20)};
     text-align: center;
     color: black;
     text-decoration: none;
     font-weight: 500;
-    @media (max-width: 768px) {
-      font-size: ${rem(16)};
-      line-height: ${rem(20)};
-    }
   }
 
   h2 {
@@ -99,10 +102,17 @@ export const AllPosts = styled.div`
   div {
     width: 40%;
     text-align: center;
+    @media (max-width: 768px) {
+      width: 70%;
+      margin: 0 auto;
+    }
 
     img {
       margin-bottom: 15px;
       height: auto;
+      @media (max-width: 768px) {
+        margin: 0 auto 15px auto;
+      }
     }
   }
 `
