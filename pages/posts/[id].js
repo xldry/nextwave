@@ -92,7 +92,7 @@ export default function Post({ postData, allPostsData }) {
           height={32}
         />
         <div className="separator" />
-        <h3>Leia a seguir</h3>
+        <h3>Continue lendo</h3>
         <S.ReadNextPosts>
           {allPostsData.filter(post => post.id !== currentPostId)
             .map(({ id, title, banner }) => (
