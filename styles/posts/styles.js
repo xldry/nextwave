@@ -132,22 +132,20 @@ export const SocialShare = styled.div`
 
 export const PostContent = styled.article`
   margin: ${rem(25)} auto ${rem(0)} auto;
-  @media (max-width: 768px) {
-    margin: ${rem(10)} auto ${rem(0)} auto;
-  }
   font-family: 'Noto Serif', serif;
   font-weight: 400;
   font-size: ${rem(16)};
   max-width: 640px;
+  @media (max-width: 768px) {
+    margin: ${rem(10)} auto ${rem(0)} auto;
+    padding: ${rem(0)} ${rem(20)};
+  }
 
   div {
     p {
       line-height: 28px;
       margin-bottom: ${rem(20)};
       color: #1a1a1a;
-      @media (max-width: 768px) {
-        padding: ${rem(0)} ${rem(20)};
-      }
 
       img {
         margin: 0 auto;
