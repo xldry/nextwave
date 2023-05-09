@@ -58,7 +58,7 @@ export default function Post({ postData, allPostsData }) {
       <S.PostInfo>
         <S.AuthorAvatar>
           <Image
-            src="/images/profile.jpeg"
+            src="/images/profile.jpg"
             width={56}
             height={56}
           />

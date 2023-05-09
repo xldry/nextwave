@@ -13,7 +13,7 @@ export default function About() {
       <S.AboutContainer>
         <S.AboutPicture>
           <Image
-            src="/images/profile.jpeg"
+            src="/images/profile.jpg"
             width={250}
             height={250}
           />
