@@ -4,6 +4,7 @@ date: '2023-04-26'
 excerpt: '(Ou como a compra impulsiva de um ingresso de show me fez descobrir uma das minhas bandas favoritas)'
 banner: 'https://aldryv.files.wordpress.com/2023/05/ttng-1.jpg'
 author: 'Aldry Vinícius'
+tags: ['ttng', 'this town needs guns', 'musica', 'math rock', 'emo', 'show', 'concert', 'gig', 'ao vivo', 'henry', 'inglaterra', 'uk', 'fabrique']
 ---
 
 Ultimamente decidi entrar na onda da galera que não fala muito bem da cidade de São Paulo. Acho que todo jovem caiçara e levemente alternativo já teve o sonho de morar na capital em alguns episódios de rebeldia, e eu com certeza estou entre eles. Entenda, eu não sairia desse estado por nada, mas é interessante observar como a maturidade mata um pouco da romantização que a gente tem pela metrópole, depois de passar tanto tempo numa região culturalmente homogeneizada como a Baixada Santista, não precisa de muito pra deslumbrar a cabeça de um recém jovem-adulto que passou muito tempo na internet.

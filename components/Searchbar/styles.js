@@ -32,4 +32,10 @@ export const Searchbar = styled.input`
   font-style: italic;
   font-family: 'Roboto Mono', monospace;
   color: #555;
+  transition: .2s;
+
+  &:focus {
+    border-bottom: 1px solid #ff3530;
+    outline: none;
+  }
 `;

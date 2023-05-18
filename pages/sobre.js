@@ -8,7 +8,7 @@ export default function About() {
   return (
     <Layout about>
       <Head>
-        <title>{siteTitle} - Sobre</title>
+        <title>Sobre | {siteTitle}</title>
       </Head>
       <S.AboutContainer>
         <S.AboutPicture>

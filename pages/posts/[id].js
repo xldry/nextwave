@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Date from '../../components/date';
-import Layout from '../../components/layout';
+import Layout, { siteTitle } from '../../components/layout';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
@@ -36,6 +36,7 @@ export default function Post({ postData, allPostsData }) {
   const router = useRouter();
   const [currentUrl, setCurrentUrl] = useState('');
   const currentPostId = postData.id;
+  const tagsString = postData.tags.join(', ');
 
   useEffect(() => {
     setCurrentUrl(window.location.href);
@@ -44,7 +45,7 @@ export default function Post({ postData, allPostsData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{postData.title} | {siteTitle}</title>
       </Head>
       <S.TitleContainer>
         <h1>{postData.title}</h1>
@@ -84,6 +85,7 @@ export default function Post({ postData, allPostsData }) {
       </S.PostInfo>
       <S.PostContent>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <S.Tags>Tags: <span>{tagsString}</span></S.Tags>
       </S.PostContent>
       <S.ReadNext>
         <Image

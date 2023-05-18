@@ -7,6 +7,10 @@ import styles from './styles.module.css'
 export const siteTitle = 'NextWave';
 
 export default function Layout({ children }) {
+  const handleSearch = (searchTerm) => {
+    // Implement your search logic here
+    console.log('Search term:', searchTerm);
+  };
   return (
     <div>
       <Head>
@@ -24,7 +28,7 @@ export default function Layout({ children }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <MainHeader />
+      <MainHeader onSearch={handleSearch}/>
       <main className={styles.main}>{children}</main>
       <Footer />
     </div>
