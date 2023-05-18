@@ -1,12 +1,21 @@
 import { useState, useEffect } from 'react'
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import Searchbar from '../Searchbar';
 
 import * as S from './styles'
 
 const MainHeader = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+  const router = useRouter();
+  
+  const handleSearch = (searchTerm) => {
+    setSearchTerm(searchTerm);
+    router.push(`/search?term=${encodeURIComponent(searchTerm)}`);
+  };
 
   useEffect(() => {
     function handleResize() {
@@ -32,9 +41,10 @@ const MainHeader = () => {
       <S.Header>
         <S.HeaderContent>
           <Link className="logo" href="/">
-            <h1>NextWave</h1>
+            <span>NextWave</span>
           </Link>
           <S.Menu>
+            <Searchbar onSearch={handleSearch} />
             <Link href="/">Blog</Link>
             <Link href="/sobre">Sobre</Link>
           </S.Menu>

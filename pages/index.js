@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Image from 'next/image';
+import Layout, { siteTitle } from '../components/layout';
+import { getSortedPostsData } from '../lib/posts';
 
 import * as S from '../styles/pages/home.js'
 
@@ -42,7 +42,7 @@ export default function Home({ allPostsData }) {
       <S.AllPosts>
         <h2>Todos os posts</h2>
         {allPostsData.slice(1).map(({ id, title, banner }) => (
-          <div key={id}>
+          <div className="all-posts" key={id}>
             <Link className="post-link" href={`/posts/${id}`}>
               <Image
                 src={banner}
