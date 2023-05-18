@@ -33,4 +33,8 @@ export const SearchResultsContainer = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
   grid-column-gap: ${rem(20)};
+
+  .all-posts {
+    width: 100%;
+  }
 `
