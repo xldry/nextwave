@@ -4,6 +4,7 @@ date: '2023-05-09'
 excerpt: '(Ou como o last.fm me fez descobrir minhas maiores paixões)'
 banner: 'https://aldryv.files.wordpress.com/2023/05/cds.jpg'
 author: 'Aldry Vinícius'
+tags: ['album', 'albuns', 'musica', 'review', 'last.fm', 'racionais', 'the strokes', 'have a nice life', 'radiohead', 'swans', 'david bowie', 'duster']
 ---
 
 ### 7. Nada como um Dia após o Outro Dia - Racionais MC's

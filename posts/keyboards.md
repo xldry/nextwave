@@ -4,6 +4,7 @@ date: '2023-05-03'
 excerpt: '(Ou como a internet me fez aderir a mais um hobby caro)'
 banner: 'https://aldryv.files.wordpress.com/2023/05/mechkb-1.jpg'
 author: 'Aldry Vinícius'
+tags: ['keyboard', 'teclado', 'mechanical', 'mecânico', 'skyloong', 'gk', 'gateron', 'redragon', 'keycap']
 ---
 
 Alguns anos atrás, em meio as minhas aventuras para os cofins de conteúdo na internet (leia-se Reddit, o fórum mais acessível que existe) tropecei no [/r/MechanicalKeyboards](https://reddit.com/r/MechanicalKeyboards), uma comunidade dedicada para "teclados custom". Isso foi um tempo depois de teclados mecânicos já terem se popularizados na comunidade gamer, então você já imagina que a dúvida começou a coçar em meu cérebro sobre o porquê de existir um pessoal dedicado a discutir sobre o periférico mais básico e antigo de um computador. Naturalmente, se você é um usuário ávido do Reddit, a regra de bolso é ordenar os posts pelos mais votados para ver o que o sub tem a oferecer. Eu não esperava nada mais do que as marcas mais populares do mercado gamer e muito RGB, mas fui surpreendido por teclados com a metade do tamanho usual e design que poderiam ser obras de arte.

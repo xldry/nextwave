@@ -163,7 +163,19 @@ export const PostContent = styled.article`
         }
       }
     }
+
+    blockquote {
+      margin: ${rem(30)} ${rem(0)};
+      text-align: center;
+      font-style: italic;
+    }
   }
+`
+
+export const Tags = styled.div`
+  font-family: 'Roboto', sans-serif;
+  font-size: ${rem(16)};
+  font-weight: 400;
 `
 
 export const ReadNext = styled.div`
@@ -186,6 +198,7 @@ export const ReadNext = styled.div`
   h3 {
     font-family: 'Bodoni Moda';
     font-size: ${rem(40)};
+    margin: ${rem(20)} ${rem(0)};
   }
 `
 

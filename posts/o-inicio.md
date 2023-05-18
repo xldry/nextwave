@@ -4,6 +4,7 @@ date: '2023-04-18'
 excerpt: '(Ou como o desemprego e o tempo livre me fizeram chegar até aqui)'
 banner: 'https://aldryv.files.wordpress.com/2023/04/computador-laptop-cinza-ligado-1.jpeg'
 author: 'Aldry Vinícius'
+tags: ['blog', 'next', 'react', 'frontity', 'vida', 'dev']
 ---
 
 Decidi criar um blog. De uma forma não muito bem-vinda, o desemprego me trouxe muito tempo livre e senti que me faltava um pouco de portfólio pra apresentar nas entrevistas em minha tentativa de me realocar no mercado.

@@ -3,28 +3,33 @@ import { getSortedPostsData } from '../lib/posts';
 import Layout, { siteTitle } from '../components/layout';
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import * as S from '../styles/pages/search.js';
 
 export default function Search({ allPostsData }) {
   const router = useRouter();
-  const { term } = router.query;
 
+  const { term } = router.query;
   let filteredPosts = [];
+
   if (term) {
     filteredPosts = allPostsData.filter((post) =>
-      post.title.toLowerCase().includes(term.toLowerCase())
+      post.tags.some((tag) => tag.toLowerCase().includes(term.toLowerCase()))
     );
   }
 
   return (
     <Layout search>
-      <div searchResults={filteredPosts}>
+      <Head>
+        <title>Resultado de busca | {siteTitle}</title>
+      </Head>
+      <div>
         <S.SearchResult>
           <h1>Resultados da sua pesquisa:</h1>
           <button onClick={() => router.back()}>Voltar</button>
-          {filteredPosts.map((post) => (
-            <>
+          <S.SearchResultsContainer>
+            {filteredPosts.map((post) => (
               <div className="all-posts" key={post.id}>
                 <Link className="post-link" href={`/posts/${post.id}`}>
                   <Image
@@ -35,8 +40,8 @@ export default function Search({ allPostsData }) {
                   <h3 className="post-title">{post.title}</h3>
                 </Link>
               </div>
-            </>
-          ))}
+            ))}
+          </S.SearchResultsContainer>
         </S.SearchResult>
       </div>
     </Layout>
