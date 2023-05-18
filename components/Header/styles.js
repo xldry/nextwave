@@ -6,10 +6,17 @@ export const Header = styled.header`
   border-style: solid;
   border-color: #DEDEDE;
 
-  h1 {
+  span {
     color: black;
+    font-size: ${rem(36)};
+    font-weight: bold;
     font-family: 'Cinzel Decorative';
     margin: 0;
+    transition: .3s;
+
+    &:hover {
+      color: #ff3530;
+    }
   }
 `
 
@@ -42,6 +49,12 @@ export const Menu = styled.nav`
     text-transform: uppercase;
     font-size: ${rem(20)};
     font-family: 'Bodoni Moda', serif;
+    transition: .3s;
+
+    &:hover {
+      border-bottom: 1px solid #ff3530;
+      color: #ff3530;
+    }
   }
 
 `

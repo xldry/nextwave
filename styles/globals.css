@@ -10,6 +10,8 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -19,4 +21,58 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+h1 {
+  font-family: 'Bodoni Moda';
+  font-size: 3.375rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  line-height: 100%;
+  margin-bottom: 15px;
+}
+
+.all-posts {
+  width: 40%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.all-posts img {
+    margin: 0;
+    margin: 0 auto 15px auto;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+    padding: 0 10px;
+  }
+  .all-posts {
+    width: 70%;
+    margin: 10px auto;
+  }
+}
+
+.post-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-link:visited {
+  color: black;
+}
+
+.post-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
 }

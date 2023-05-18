@@ -39,7 +39,7 @@ export const LatestPost = styled.div`
 
   .latest-post-excerpt {
     font-size: ${rem(16)};
-    font-family: monospace;
+    font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     color: #555;
     margin-bottom: 30px;
@@ -79,16 +79,6 @@ export const AllPosts = styled.div`
     }
   }
 
-  .post-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: ${rem(16)};
-    line-height: ${rem(20)};
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
   h2 {
     font-family: 'Bodoni Moda';
     font-size: ${rem(40)};
@@ -100,19 +90,10 @@ export const AllPosts = styled.div`
   }
 
   div {
-    width: 40%;
-    text-align: center;
-    @media (max-width: 768px) {
-      width: 70%;
-      margin: 0 auto;
-    }
-
     img {
-      margin-bottom: 15px;
+      margin: 0;
+      margin: 0 auto 15px auto;
       height: auto;
-      @media (max-width: 768px) {
-        margin: 0 auto 15px auto;
-      }
     }
   }
 `
