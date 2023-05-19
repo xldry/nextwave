@@ -23,6 +23,9 @@ export const Header = styled.header`
 export const HeaderContent = styled.div`
   max-width: 1000px;
   padding: 2em 1em;
+  @media (max-width: 768px) {
+    padding: 1em;
+  }
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -78,6 +81,13 @@ export const MobileMenuContainer = styled.div`
   .drawer-menu.open {
     right: 0;
   }
+
+  .search {
+    border: 0;
+    background: transparent;
+    width: ${rem(16)};
+    margin-right: ${rem(15)};
+  }
 `
 
 export const MobileMenu = styled.nav`
@@ -105,4 +115,10 @@ export const MobileMenu = styled.nav`
 export const MobileMenuButton = styled.button`
   background: transparent;
   border: 0;
+`
+
+export const MobileSearchBar = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
 `

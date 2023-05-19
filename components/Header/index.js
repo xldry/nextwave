@@ -3,11 +3,14 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Searchbar from '../Searchbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 import * as S from './styles'
 
 const MainHeader = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isSearchBarVisible, setSearchBarVisible] = useState(false);
 
   useEffect(() => {
     function handleResize() {
@@ -41,6 +44,9 @@ const MainHeader = () => {
             <Link href="/sobre">Sobre</Link>
           </S.Menu>
           <S.MobileMenuContainer>
+            <button className="search" type="button" onClick={() => setSearchBarVisible(!isSearchBarVisible)}>
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </button>
             <S.MobileMenuButton onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
               <Image
                 src="/images/drawer.png"
@@ -54,6 +60,11 @@ const MainHeader = () => {
             </S.MobileMenu>
           </S.MobileMenuContainer>
         </S.HeaderContent>
+        <S.MobileSearchBar>
+          {isSearchBarVisible && (
+            <Searchbar />
+          )}
+        </S.MobileSearchBar>
       </S.Header>
     </>
   )
