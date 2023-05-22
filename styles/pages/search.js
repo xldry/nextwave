@@ -18,6 +18,7 @@ export const SearchResult = styled.div`
     color: black;
     cursor: pointer;
     margin-bottom: ${rem(20)};
+    margin-left: ${rem(20)};
     transition: .3s;
 
     &:hover {
@@ -36,5 +37,8 @@ export const SearchResultsContainer = styled.div`
 
   .all-posts {
     width: 100%;
+    @media (max-width: 768px) {
+      max-width: 280px;
+    }
   }
 `
