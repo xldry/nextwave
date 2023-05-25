@@ -13,6 +13,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^1.4.0",
     "date-fns": "^2.30.0",
+    "dotenv": "^16.0.3",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "net": "^1.0.2",

@@ -9,7 +9,7 @@ const RecentLikes = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          'http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=jumiknight&api_key=${process.env.LASTFM_API_KEY}&format=json&period=1month&limit=6'
+        `http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=jumiknight&api_key=${process.env.NEXT_PUBLIC_LASTFM_API_KEY}&format=json&period=1month&limit=6`
         );
         const { topalbums } = response.data;
         const { album } = topalbums;
