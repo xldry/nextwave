@@ -26,7 +26,7 @@ export const TopAlbumsContainer = styled.div`
   margin: 0 auto;
   @media (max-width: 768px) {
     grid-template-columns: repeat(2,1fr);
-    padding: 0 ${rem(35)};
+    padding: 0 ${rem(15)};
   }
 `
 
