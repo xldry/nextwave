@@ -3,11 +3,18 @@ import { rem } from "polished";
 
 export const RecentLikesContainer = styled.div`
   h2 {
-    margin: 0
+    margin-bottom: ${rem(10)};
+    @media (max-width: 768px) {
+      padding: 0 ${rem(10)};
+      line-height: 47px;
+    }
   }
 
   p {
     margin-bottom: ${rem(20)};
+    @media (max-width: 768px) {
+      padding: 0 ${rem(20)};
+    }
   }
 `
 
@@ -17,6 +24,10 @@ export const TopAlbumsContainer = styled.div`
   grid-row-gap: ${rem(20)};
   max-width: 600px;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2,1fr);
+    padding: 0 ${rem(35)};
+  }
 `
 
 export const AlbumContainer = styled.div`
@@ -28,25 +39,36 @@ export const AlbumContainer = styled.div`
   max-width: 175px;
   margin: 0 auto;
   position: relative;
-
-  &:hover {
-    a {
-      display: block;
-      background: white;
-      padding: ${rem(5)};
-    }
+  @media (max-width: 768px) {
     img {
-      filter: blur(3px);
-      transition: filter 0.3s ease;
+      max-width: 140px;
     }
   }
 
-  a {
+  &:hover {
+    @media (min-width: 768px) {
+      .desktop-link {
+        display: block;
+        background: white;
+        padding: ${rem(5)};
+        box-shadow: 5px 5px 1px black;
+      }
+      img {
+        filter: blur(3px);
+        transition: filter 0.3s ease;
+      }
+    }
+  }
+
+  .desktop-link {
     position: absolute;
     top: 60px;
     display: none;
     color: black;
     text-decoration: none;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   p {
@@ -55,5 +77,15 @@ export const AlbumContainer = styled.div`
     }
 
     margin: 0;
+  }
+
+  .mobile-link {
+    display: none;
+    color: inherit;
+    @media (max-width: 768px) {
+      display: block;
+      font-size: ${rem(14)};
+      margin-top: ${rem(5)};
+    }
   }
 `

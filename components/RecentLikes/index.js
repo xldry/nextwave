@@ -30,7 +30,11 @@ const RecentLikes = () => {
         {recentArtists.map((artist) => (
           <S.AlbumContainer key={artist.name}>
             <img src={artist.image[2]['#text']} alt="Album Art" />
-            <a href={artist.url}>
+            <a className="desktop-link" href={artist.url} target='no-follow'>
+              <p>{artist.artist.name}</p>
+              <p>{artist.name}</p>
+            </a>
+            <a className="mobile-link" href={artist.url} target='no-follow'>
               <p>{artist.artist.name}</p>
               <p>{artist.name}</p>
             </a>
