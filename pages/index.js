@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout, { siteTitle } from '../components/layout';
+import RecentLikes from '../components/RecentLikes';
 import { getSortedPostsData } from '../lib/posts';
 
 import * as S from '../styles/pages/home.js'
@@ -34,7 +35,7 @@ export default function Home({ allPostsData }) {
               <p className="latest-post-excerpt">
                 {excerpt}
               </p>
-              <div className="separator" />
+              <S.Separator />
             </Link>
           </div>
         ))}
@@ -53,7 +54,10 @@ export default function Home({ allPostsData }) {
             </Link>
           </div>
         ))}
+        <S.Separator />
       </S.AllPosts>
+      <RecentLikes />
+      <S.Separator />
     </Layout>
   );
 }

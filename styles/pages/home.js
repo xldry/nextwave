@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 import { rem } from 'polished'
 
+export const Separator = styled.div`
+  width: 320px;
+  height: 2px;
+  background: rgb(255, 53, 48);
+  margin: ${rem(50)} auto;
+
+`
 export const LatestPost = styled.div`
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: ${rem(50)};
 
   div {
     display: flex;
@@ -24,13 +30,6 @@ export const LatestPost = styled.div`
   }
 
   .latest-post-title {
-    font-family: 'Bodoni Moda';
-    font-size: ${rem(54)};
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    line-height: 100%;
-    margin: 20px 0;
     @media (max-width: 768px) {
       font-size: ${rem(36)};
       padding: 0 10px;
@@ -38,22 +37,9 @@ export const LatestPost = styled.div`
   }
 
   .latest-post-excerpt {
-    font-size: ${rem(16)};
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    color: #555;
-    margin-bottom: 30px;
-    text-align: center;
     @media (max-width: 768px) {
       padding: 0 20px;
     }
-  }
-
-  .separator {
-    width: 320px;
-    height: 2px;
-    background: rgb(255, 53, 48);
-    margin: 0 auto;
   }
 `
 

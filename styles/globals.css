@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
@@ -31,6 +31,36 @@ h1 {
   text-align: center;
   line-height: 100%;
   margin-bottom: 15px;
+}
+
+h2 {
+  font-family: 'Bodoni Moda';
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.latest-post-title {
+  font-family: 'Bodoni Moda';
+  font-size: 3.375rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  line-height: 100%;
+  margin: 20px 0;
+}
+
+.latest-post-excerpt {
+  font-size: 1rem;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .all-posts {
