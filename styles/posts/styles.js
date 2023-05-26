@@ -240,6 +240,8 @@ export const ReadNextPosts = styled.div`
     color: black;
     text-decoration: none;
     font-weight: 500;
+    margin-bottom: ${rem(15)};
+    margin-top: ${rem(0)};
   }
 
   h2 {
