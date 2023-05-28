@@ -3,8 +3,16 @@ title: 'Como sentir nostalgia por um momento que nunca existiu'
 date: '2023-05-17'
 excerpt: '(Ou o fluxo de consciência ao comer no McDonald`s de madrugada)'
 banner: 'https://aldryv.files.wordpress.com/2023/05/untrue-1.jpg'
+cover: 'https://upload.wikimedia.org/wikipedia/en/6/64/BurialUntrue.jpg'
+album: 'Untrue'
+artist: 'Burial'
+score: '10'
+release: '2007'
+genre: 'Dubstep / UK Garage'
+label: 'Hyperdub'
 author: 'Aldry Vinícius'
 tags: ['burial', 'untrue', 'uk garage', 'review', 'musica', 'eletronica', 'album']
+type: 'review'
 ---
 
 Foi só alguns dias depois de eu publicar o meu último artigo em álbuns que mudaram minha vida, que eu me dei conta que tinha esquecido de botar esse na lista. Talvez não fosse meu intuito avaliar álbuns por inteiro quando eu criei o blog: nunca me julguei crítico o bastante e nem letrado o suficiente pra escrever uma review tão a fundo sobre algo que eu gosto. Se você for ver, até no meu último post eu dou apenas uma pincelada sobre o porquê que alguns discos de lá são tão importantes pra mim. De qualquer forma, o blog tá aí com a intenção de me ajudar a escrever melhor, então decidi abrir esse lado íntimo falando sobre um álbum tão intimista quanto o Untrue.

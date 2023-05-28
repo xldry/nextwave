@@ -43,7 +43,7 @@ export const PostInfo = styled.div`
   flex-direction: row;
   margin: ${rem(25)} auto ${rem(0)} auto;
   padding-top: ${rem(25)};
-  border-top: 2px solid black;
+  border-top: 1px solid #ccc;
   max-width: 640px;
   position: relative;
   @media (max-width: 768px) {
@@ -174,8 +174,22 @@ export const PostContent = styled.article`
 
 export const Tags = styled.div`
   font-family: 'Roboto', sans-serif;
-  font-size: ${rem(16)};
+  font-size: ${rem(12)};
   font-weight: 400;
+  color: #555;
+  margin-top: ${rem(15)};
+  text-transform: uppercase;
+
+  a {
+    color: #000;
+    transition: .3s;
+    margin: 0 ${rem(5)};
+
+    &:hover {
+      color: #ff3530;
+      border-bottom: 1px solid #ff3530;
+    }
+  }
 `
 
 export const ReadNext = styled.div`
@@ -187,7 +201,7 @@ export const ReadNext = styled.div`
   .separator {
     height: 1px;
     width: 100%;
-    background: black;
+    background: #ccc;
   }
 
   img {
@@ -235,7 +249,7 @@ export const ReadNextPosts = styled.div`
 
   .post-title {
     font-family: 'Roboto', sans-serif;
-    font-size: ${rem(18)};
+    font-size: ${rem(16)};
     text-align: center;
     color: black;
     text-decoration: none;
@@ -252,5 +266,120 @@ export const ReadNextPosts = styled.div`
     width: 100%;
     margin-bottom: ${rem(30)};
     font-weight: 300;
+  }
+`
+
+export const ReviewHeader = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: ${rem(20)} 0;
+  border-bottom: 1px solid #ccc;
+
+  @media (max-width: 768px) {
+    padding: ${rem(20)};
+    justify-content: center;
+  }
+`
+
+export const Review = styled.div`
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: ${rem(12)};
+    font-weight: 500;
+    padding: ${rem(20)} 0;
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    li {
+      margin-right: ${rem(24)};
+      margin-bottom: ${rem(5)};
+    }
+  }
+`
+
+export const ReviewTitle = styled.div`
+  text-align: center;
+  h1 {
+    font-size: ${rem(24)};
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: ${rem(14)};
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    color: #555;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 ${rem(20)};
+  }
+`
+
+export const AlbumInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-size: ${rem(36)};
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: ${rem(15)};
+  }
+
+  h3 {
+    font-size: ${rem(26)};
+    font-weight: 300;
+  }
+
+  span {
+    font-size: ${rem(12)};
+    margin-top: ${rem(20)};
+    @media (max-width: 768px) {
+      margin-top: ${rem(15)};
+      margin-bottom: ${rem(15)};
+    }
+  }
+`
+
+export const AlbumScore = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    @media (max-width: 768px) {
+      max-width: 150px;
+      max-height: 150px;
+    }
+  }
+
+  div {
+    width: 134px;
+    height: 134px;
+    border: 8px solid #ff3530;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: ${rem(20)};
+  }
+
+  p {
+    font-size: ${rem(48)};
+    color: #ff3530;
+    font-weight: bold;
   }
 `

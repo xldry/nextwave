@@ -9,6 +9,12 @@ module.exports = {
         port: '',
         pathname: '/2023/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 }
