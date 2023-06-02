@@ -179,6 +179,8 @@ export const Tags = styled.div`
   color: #555;
   margin-top: ${rem(15)};
   text-transform: uppercase;
+  display: flex;
+  flex-flow: row wrap;
 
   a {
     color: #000;

@@ -25,6 +25,7 @@ Admito que demorei um pouco pra entender o Untrue. E quando eu falo "entender" n
 
 O álbum do começo ao fim parece sempre ser um mistério, uma vaga lembrança de algum momento reflexivo e intimista, quase sempre associado à vida noturna ou a solidão, por vezes até te fazendo sentir falta de algo que você não sabe o que é. E a maior beleza nisso está em sua própria abertura a interpretação; a música não precisa te dizer exatamente o quê, pois ela te dá a liberdade de explorar os seus sentimentos e associá-los com seus próprios momentos de vida. Mesmo que eu frequentemente cutuque estes sentimentos em cada vez que eu ouço o álbum, sempre vai ter espaço pra alguma coisa nova. O álbum com sua própria natureza, sombria e distante, sempre te dá a sensação de nunca concluir ou mostrar exatamente o que ele quer dizer, o que faz retornar pra ouvi-lo, de novo e de novo, sempre uma nova aventura em introspecção.
 
+Ouça:
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7vZTj01UKQ6OuTItkQfxuy?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 >“'Cause at once upon a time it was you who I adored...<br/>

@@ -15,6 +15,12 @@ module.exports = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'f4.bcbits.com',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
 }

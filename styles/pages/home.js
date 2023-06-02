@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { rem } from 'polished'
 
 export const Separator = styled.div`
-  width: 320px;
+  width: 360px;
   height: 2px;
   background: rgb(255, 53, 48);
   margin: ${rem(50)} auto;
