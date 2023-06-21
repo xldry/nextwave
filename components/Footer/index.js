@@ -1,6 +1,30 @@
-import * as S from './styles'
+import { useState, useEffect } from 'react';
+import * as S from './styles';
 
 const Footer = () => {
+  const [tracks, setTracks] = useState([]);
+
+  useEffect(() => {
+    const fetchRecentlyPlayed = async () => {
+      try {
+        const response = await fetch('/api/getCurrentTrack');
+        const data = await response.json();
+        const { recenttracks } = data;
+        const { track } = recenttracks;
+
+        if (Array.isArray(track)) {
+          setTracks(track);
+        } else {
+          setTracks([track]);
+        }
+      } catch (error) {
+        console.error('Error fetching recently played tracks:', error);
+      }
+    };
+
+    fetchRecentlyPlayed();
+  }, []);
+
   const links = [
     {
       id: 1,
@@ -26,6 +50,15 @@ const Footer = () => {
   return (
     <>
       <S.FooterContainer>
+        <S.ScrollingText>
+          <div>
+            {tracks.map((track) => (
+              <p key={track.date ? track.date.uts : track.mbid}>
+                O quê estou ouvindo: <span>♫ {track.artist['#text']} - {track.name}</span>
+              </p>
+            ))}
+          </div>
+        </S.ScrollingText>
         <div>
           <span>NextWave</span>
           <p>NEXTWAVE é meu blog pessoal. Aqui eu falo principalmente dos meus hobbies que envolvem música, games e outras coisas. Você pode me achar nas redes sociais abaixo:</p>

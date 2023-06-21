@@ -6,7 +6,7 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   width: 100%;
   background: black;
-  padding: ${rem(50)} ${rem(0)};
+  padding: ${rem(10)} ${rem(0)};
   margin-top: ${rem(50)};
 
   div {
@@ -67,3 +67,38 @@ export const FooterContainer = styled.div`
     }
   }
 `
+
+export const ScrollingText = styled.div`
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%); /* Start scrolling from the right side */
+    }
+    
+    100% {
+      transform: translateX(-100%); /* Scroll to the left side */
+    }
+  }
+
+  div {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+    width: 100%;
+
+    p {
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-family: 'Roboto Mono', monospace;
+
+      span {
+        font-weight: 500;
+        font-family: 'Roboto Mono', monospace;
+        font-size: ${rem(18)};
+      }
+    }
+  }
+`;
