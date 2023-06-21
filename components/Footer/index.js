@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 import * as S from './styles';
 
 const Footer = () => {
@@ -7,10 +8,9 @@ const Footer = () => {
   useEffect(() => {
     const fetchRecentlyPlayed = async () => {
       try {
-        const response = await fetch('/api/getCurrentTrack');
-        const data = await response.json();
-        const { recenttracks } = data;
-        const { track } = recenttracks;
+        const response = await axios.get('/api/getCurrentTrack');
+        const { recentTracks } = response.data;
+        const { track } = recentTracks;
 
         if (Array.isArray(track)) {
           setTracks(track);

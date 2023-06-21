@@ -8,10 +8,10 @@ export default async (req, res) => {
     }
     
     const data = await response.json();
-    const { recenttracks } = data;
-    const { track } = recenttracks;
+    const { recenttrack } = data;
+    const { track } = recenttrack;
 
-    res.status(200).json({ tracks: track });
+    res.status(200).json({ recentTracks: track });
   } catch (error) {
     console.error('Error fetching data:', error);
     res.status(500).json({ error: 'Error fetching data from Last.fm API' });
